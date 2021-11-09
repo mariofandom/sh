@@ -25,4 +25,4 @@ fi
 
 apt install mc
 apt install htop
-apt install git
+sudo apt install git-all
