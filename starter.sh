@@ -11,6 +11,7 @@ sudo ufw deny out from any to 169.254.0.0/16
 sudo ufw deny out from any to 198.18.0.0/15
 sudo ufw deny out from any to 100.64.0.0/10
 sudo ufw --force enable
+echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf > /dev/null
 
 exists()
 {
