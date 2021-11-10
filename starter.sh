@@ -26,3 +26,4 @@ fi
 apt install mc
 apt install htop
 sudo apt install git-all
+apt install nano
