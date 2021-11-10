@@ -1,6 +1,7 @@
 #!/bin/bash
 
 sudo apt update
+apt-get install sudo
 sudo apt install ufw -y
 sudo ufw allow 22:65535/tcp
 sudo ufw allow 22:65535/udp
