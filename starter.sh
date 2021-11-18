@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt update
-apt-get install sudo
+apt-get install sudo -y
 sudo apt install ufw -y
 sudo ufw allow 22:65535/tcp
 sudo ufw allow 22:65535/udp
@@ -25,7 +25,7 @@ fi
 
 
 
-apt install mc
-apt install htop
-sudo apt install git-all
-apt install nano
+apt install mc -y
+apt install htop -y
+sudo apt install git-all -y
+apt install nano -y
