@@ -2,7 +2,7 @@
 
 sudo apt update
 timedatectl
-timedatectl list-timezones
+#timedatectl list-timezones
 timedatectl list-timezones |grep Moscow
 Europe/Moscow
 timedatectl list-timezones |grep Kiev
