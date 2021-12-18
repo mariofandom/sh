@@ -3,10 +3,10 @@
 sudo apt update
 timedatectl
 #timedatectl list-timezones
-timedatectl list-timezones |grep Moscow
-Europe/Moscow
-timedatectl list-timezones |grep Kiev
-Europe/Kiev
+#timedatectl list-timezones |grep Moscow
+#Europe/Moscow
+#timedatectl list-timezones |grep Kiev
+#Europe/Kiev
 timedatectl set-timezone Europe/Moscow
 timedatectl set-timezone Europe/Kiev
 apt-get install ntp
