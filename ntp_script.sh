@@ -12,7 +12,7 @@ timedatectl set-timezone Europe/Kiev
 apt-get install ntp
 sntp --version
 
-
+cp /etc/ntp.conf /etc/ntp_original.conf
 echo "#/etc/ntp.conf, configuration for ntpd; see ntp.conf(5) for help
 
 driftfile /var/lib/ntp/ntp.drift
@@ -77,13 +77,7 @@ restrict source notrap nomodify noquery
 # If you want to listen to time broadcasts on your local subnet, de-comment the
 # next lines.  Please do this only if you trust everybody on the network!
 #disable auth
-#broadcastclient
-
-
-
-
-
-" > $HOME/etc/ntp111.conf
+#broadcastclient" > /etc/ntp.conf
 service ntp restart
 service ntp status
 systemctl enable ntp
